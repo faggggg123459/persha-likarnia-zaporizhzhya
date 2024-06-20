@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff4d4d; /* Set the entire background to red */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white; /* Container background to white for contrast */
+    color: red;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    background-color: white;
+    color: red;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.intro {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.doctors {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.doctor-card {
+    background-color: white;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+    width: 140px;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.doctor-card:hover {
+    transform: scale(1.05);
+}
+
+.doctor-logo {
+    font-size: 1.2rem;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.doctor-image {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+
+footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); }
+    to { transform: translateY(0); }
+}
+
+.doctor-card {
+    animation: fadeIn 1s ease-in-out, slideIn 0.5s ease-out;
+}
